@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--transparent-white: rgba(245, 245, 245, 0.5);
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+	text-shadow: 2px 2px red, 4px 4px green, 6px 6px blue;
+}
+
+dialog::backdrop {
+	backdrop-filter: blur(4px) sepia(0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #1a1a1a;
+		color: var(--transparent-white);
+	}
+}
+
+.game {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.cell {
+	height: 50px;
+	width: 50px;
+	border: 1px solid var(--transparent-white);
+}
+
+.boop {
+	background-color: red;
+}
+
+.player {
+	background-color: darkorchid;
+}

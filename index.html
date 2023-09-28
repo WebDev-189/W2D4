@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grid Runner</title>
+		<link rel="stylesheet" href="./public/style.css" />
+	</head>
+	<body>
+		<h1>Grid Runner</h1>
+
+		<section id="main-screen">
+			<ul>
+				<li>
+					<p>Rules</p>
+					<ul>
+						<li>Rule1</li>
+						<li>Rule2</li>
+						<li>Rule3</li>
+						<li>Rule4</li>
+					</ul>
+				</li>
+			</ul>
+
+			<button id="ready-to-play">Ready To Play</button>
+		</section>
+
+		<section hidden id="game-screen">
+			<button id="btn-start">Start Game</button>
+			<h2 id="score">Score: <span>0</span></h2>
+			<div class="game"></div>
+		</section>
+
+		<dialog id="end-game-screen">
+			<h2>Congrats !</h2>
+
+			<button>Play Again</button>
+		</dialog>
+		<script src="./public/functions.js"></script>
+		<script src="./public/main.js"></script>
+	</body>
+</html>
